@@ -23,12 +23,9 @@ if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Emoji"
 os.chdir(path)
 pdfmetrics.registerFont(TTFont('Segeo UI Emoji', 'segoe-ui-emoji.ttf'))
-key = input("Wait")
 styles = getSampleStyleSheet()
 emojiStyle = ParagraphStyle('emoji', parent=styles['Normal'], fontSize = 13)
-key = input("Wait")
 emojiParagraph = Paragraph("hallo",emojiStyle )
-key = input("Wait")
 emojiname = "Emoji.pdf"
 doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
