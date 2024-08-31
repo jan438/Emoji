@@ -29,7 +29,8 @@ emojiStyle = ParagraphStyle('emoji', parent=styles['Normal'], fontSize = 13)
 key = input("Wait")
 emojiParagraph = Paragraph("hallo",emojiStyle )
 key = input("Wait")
-doc = SimpleDocTemplate("Emoji", pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
+emojiname = "Emoji.pdf"
+doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
 storypdf.append(emojiParagraph)
 doc.build(storypdf)
