@@ -25,7 +25,7 @@ os.chdir(path)
 pdfmetrics.registerFont(TTFont('Segeo UI Emoji', 'segoe-ui-emoji.ttf'))
 styles = getSampleStyleSheet()
 emojiStyle = ParagraphStyle('emoji', parent=styles['Normal'], fontName = "Segeo UI Emoji", fontSize = 24)
-emojiParagraph = Paragraph("hallo😎😛", emojiStyle )
+emojiParagraph = Paragraph("hallo😎😛🙈", emojiStyle )
 emojiname = "PDF/Emoji.pdf"
 doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
