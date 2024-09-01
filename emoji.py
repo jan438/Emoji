@@ -26,11 +26,14 @@ efn = 'Segeo UI Emoji'
 pdfmetrics.registerFont(TTFont(efn, 'segoe-ui-emoji.ttf'))
 pdfmetrics.registerFont(TTFont('Ubuntu', 'Ubuntu-Regular.ttf'))
 styles = getSampleStyleSheet()
-emojiStyle = ParagraphStyle('emoji', parent=styles['Normal'], fontName = "Segeo UI Emoji", fontSize = 24)
+normalStyle = ParagraphStyle('nrm', parent=styles['Normal'], fontName = "Ubuntu", fontSize = 24)
+emojiStyle = ParagraphStyle('emo', parent=styles['Normal'], fontName = efn, fontSize = 24)
+normalParagraph = Paragraph("hallo", normalStyle )
 emojiParagraph = Paragraph("hallo😎😛🙈🏈⚽", emojiStyle )
 emojiname = "PDF/Emoji.pdf"
 doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
+storypdf.append(normalParagraph)
 storypdf.append(emojiParagraph)
 doc.build(storypdf)
 key = input("Wait")
