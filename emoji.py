@@ -23,6 +23,7 @@ if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Emoji"
 os.chdir(path)
 pdfmetrics.registerFont(TTFont('Segeo UI Emoji', 'segoe-ui-emoji.ttf'))
+pdfmetrics.registerFont(TTFont('Ubuntu', 'Ubuntu-Regular.ttf'))
 styles = getSampleStyleSheet()
 emojiStyle = ParagraphStyle('emoji', parent=styles['Normal'], fontName = "Segeo UI Emoji", fontSize = 24)
 emojiParagraph = Paragraph("hallo😎😛🙈🏈⚽", emojiStyle )
