@@ -30,7 +30,7 @@ styles = getSampleStyleSheet()
 normalStyle = ParagraphStyle('nrm', parent=styles['Normal'], fontName = nfn, fontSize = 24)
 emojiStyle = ParagraphStyle('emo', parent=styles['Normal'], fontName = efn, fontSize = 24)
 normalParagraph = Paragraph("hallo" + "<font name = " + nfn + ">" + "abc" + "</font>", normalStyle )
-emojiParagraph = Paragraph("<font name = " + nfn + ">" + "hallo" + "</font>" + "😎😛🙈🏈⚽" + "<font name = " + nfn + ">" + "hallo" + "</font>", emojiStyle )
+emojiParagraph = Paragraph("<font name = " + nfn + ">" + "hallo" + "</font>" + "😎😛🙈🏈⚽" + u"\u26BD" + "<font name = " + nfn + ">" + "hallo" + "</font>", emojiStyle )
 emojiname = "PDF/Emoji.pdf"
 doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
