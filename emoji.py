@@ -17,7 +17,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
 def unicodetostr(code):
-    print(code)
+    print(code, len(code))
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Emoji'
