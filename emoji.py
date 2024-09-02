@@ -22,12 +22,13 @@ def binairtostr(s, c):
     for i in range(c):
         f = f + s[o] + s[o+1]
         o = o + 4
-    print(f)
+    return f
 
 def unicodetostr(code):
     u = code.encode("utf-8")
     s = str(u)
-    binairtostr(s, len(u))
+    f = binairtostr(s, len(u))
+    print(s, f)
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Emoji'
