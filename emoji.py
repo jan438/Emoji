@@ -16,12 +16,13 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, Image, Space
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
+def binairtostr(s, c):
+    print(s, c)
+
 def unicodetostr(code):
     u = code.encode("utf-8")
     s = str(u)
-    print(u, s)
-    for i in range(len(u)):
-        print(u[i])
+    binairtostr(s, len(u))
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Emoji'
