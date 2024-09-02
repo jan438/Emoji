@@ -16,6 +16,8 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, Image, Space
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
+def unicodetostr(code):
+    print(code)
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Emoji'
@@ -23,6 +25,7 @@ if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Emoji"
 os.chdir(path)
 unicode = "\U0001F339"
+unicodetostr(unicode)
 nfn = "Ubuntu"
 efn = 'Segeo UI Emoji'
 pdfmetrics.registerFont(TTFont(efn, 'segoe-ui-emoji.ttf'))
