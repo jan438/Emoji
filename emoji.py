@@ -22,6 +22,7 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Emoji"
 os.chdir(path)
+unicode = "\U0001F339"
 nfn = "Ubuntu"
 efn = 'Segeo UI Emoji'
 pdfmetrics.registerFont(TTFont(efn, 'segoe-ui-emoji.ttf'))
@@ -30,7 +31,7 @@ styles = getSampleStyleSheet()
 normalStyle = ParagraphStyle('nrm', parent=styles['Normal'], fontName = nfn, fontSize = 24)
 emojiStyle = ParagraphStyle('emo', parent=styles['Normal'], fontName = efn, fontSize = 24)
 normalParagraph = Paragraph("hallo" + "<font name = " + nfn + ">" + "abc" + "</font>", normalStyle )
-emojiParagraph = Paragraph("<font name = " + nfn + ">" + "hallo" + "</font>" + "😎😛🙈🏈" + u"\u26BD" + "\U0001F339" + u"\xbc" +  u"\xbc\xbc" + u"\u2022" + "<font name = " + nfn + ">" + "hallo" + "</font>", emojiStyle )
+emojiParagraph = Paragraph("<font name = " + nfn + ">" + "hallo" + "</font>" + "😎😛🙈🏈" + u"\u26BD" + unicode + u"\xbc" +  u"\xbc\xbc" + u"\u2022" + "<font name = " + nfn + ">" + "hallo" + "</font>", emojiStyle )
 emojiname = "PDF/Emoji.pdf"
 doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
