@@ -21,7 +21,8 @@ def bytetostr(byte):
 
 def unicodetostr(code):
     u = code.encode("utf-8")
-    bytetostr(u[0])
+    for i in range(len(u)):
+        bytetostr(u[i])
     print(code, len(code), u, len(u))
 
 if sys.platform[0] == 'l':
