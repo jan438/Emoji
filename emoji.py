@@ -36,7 +36,7 @@ def bytetostr(byte):
     hexchars[15] = "F"
 
 
-    print(byte)
+    print(byte, str(byte))
 
 def unicodetostr(code):
     u = code.encode("utf-8")
