@@ -17,11 +17,12 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
 def binairtostr(s, c):
-    print(s, c)
+    f = ""
     o = 4
     for i in range(c):
-        print(s[o], s[o+1])
+        f = f + s[o] + s[o+1]
         o = o + 4
+    print(f)
 
 def unicodetostr(code):
     u = code.encode("utf-8")
