@@ -17,6 +17,8 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
 def bytetostr(byte):
+    hexchars = [[] for _ in range(16)]
+    hexchars[0] = "0"
     print(byte)
 
 def unicodetostr(code):
