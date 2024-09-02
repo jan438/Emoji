@@ -29,6 +29,7 @@ def unicodetostr(code):
     s = str(u)
     f = binairtostr(s, len(u))
     print(s, f)
+    return f
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Emoji'
@@ -36,9 +37,10 @@ if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Emoji"
 os.chdir(path)
 unicode1 = u"\u26BD"
-unicodetostr(unicode1)
+f = unicodetostr(unicode1)
 unicode2 = "\U0001F339"
-unicodetostr(unicode2)
+f = unicodetostr(unicode2)
+print(unicode2, f)
 nfn = "Ubuntu"
 efn = 'Segeo UI Emoji'
 pdfmetrics.registerFont(TTFont(efn, 'segoe-ui-emoji.ttf'))
