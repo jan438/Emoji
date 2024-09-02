@@ -18,6 +18,10 @@ from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
 def binairtostr(s, c):
     print(s, c)
+    o = 4
+    for i in range(c):
+        print(s[o], s[o+1])
+        o = o + 4
 
 def unicodetostr(code):
     u = code.encode("utf-8")
