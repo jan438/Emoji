@@ -16,8 +16,12 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, Image, Space
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
+def bytetostr(byte):
+    print(byte)
+
 def unicodetostr(code):
     u = code.encode("utf-8")
+    bytetostr(u[0])
     print(code, len(code), u, len(u))
 
 if sys.platform[0] == 'l':
