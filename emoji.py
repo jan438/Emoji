@@ -16,33 +16,10 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, Image, Space
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
-def bytetostr(byte):
-    hexchars = [[] for _ in range(16)]
-    hexchars[0] = "0"
-    hexchars[1] = "1"
-    hexchars[2] = "2"
-    hexchars[3] = "3"
-    hexchars[4] = "4"
-    hexchars[5] = "5"
-    hexchars[6] = "6"
-    hexchars[7] = "7"
-    hexchars[8] = "8"
-    hexchars[9] = "9"
-    hexchars[10] = "A"
-    hexchars[11] = "B"
-    hexchars[12] = "C"
-    hexchars[13] = "D"
-    hexchars[14] = "E"
-    hexchars[15] = "F"
-
-
-    print(byte, str(byte))
-
 def unicodetostr(code):
     u = code.encode("utf-8")
     for i in range(len(u)):
-        bytetostr(u[i])
-    print(code, len(code), u, len(u))
+        print(u[i])
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Emoji'
