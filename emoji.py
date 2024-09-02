@@ -18,7 +18,8 @@ from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 
 def unicodetostr(code):
     u = code.encode("utf-8")
-    print(u)
+    s = str(u)
+    print(u, s)
     for i in range(len(u)):
         print(u[i])
 
