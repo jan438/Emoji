@@ -13,6 +13,6 @@ print("string utf8", utf8code, "binair unicode", unicode, "string unicode", unis
 
 eind = unistr[-3:]
 x = int(eind, 16)
-print(eind, str(x))
+print("table index", eind, str(x))
 
 key = input("Wait")
