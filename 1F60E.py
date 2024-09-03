@@ -14,6 +14,6 @@ print("utf8", utf8code, "unicode", unicode, "ascii", unistr, "utf8", smunicode)
 
 eind = unistr[-3:]
 x = int(eind, 16)
-print(str(x))
+print(eind, str(x))
 
 key = input("Wait")
