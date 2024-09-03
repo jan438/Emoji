@@ -1,9 +1,10 @@
-smunicode = "\U0001F60E"
+unicode1 = "\U0001F60E"
 
 utf8code = "😎"
 smbytes = utf8code.encode("utf-8")  # smbytes = bytearray.fromhex("f09f988e")
 
-print('U+{:X}'.format(ord(utf8code)))
+unicode2 = ('U+{:X}'.format(ord(utf8code)))
+print("string utf8", unicode1, "ord utf8", unicode2)
 
 utf8code = smbytes.decode('utf-8')
 unicode =utf8code.encode('unicode_escape')
