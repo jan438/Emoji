@@ -1,8 +1,7 @@
-smbytes =bytearray.fromhex("f09f988e")
 smunicode = "\U0001F60E"
 
 utf8code = "😎"
-smbytes = utf8code.encode("utf-8")
+smbytes = utf8code.encode("utf-8")  # smbytes = bytearray.fromhex("f09f988e")
 
 print('U+{:X}'.format(ord(utf8code)))
 
