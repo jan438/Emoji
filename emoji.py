@@ -40,6 +40,7 @@ unicode1 = u"\u26BD"
 f = unicodetostr(unicode1)
 unicode2 = "\U0001F339"
 f = unicodetostr(unicode2)
+unicode3 = "\U0001F38A"
 print(unicode2, f)
 nfn = "Ubuntu"
 efn = 'Segeo UI Emoji'
@@ -49,7 +50,7 @@ styles = getSampleStyleSheet()
 normalStyle = ParagraphStyle('nrm', parent=styles['Normal'], fontName = nfn, fontSize = 24)
 emojiStyle = ParagraphStyle('emo', parent=styles['Normal'], fontName = efn, fontSize = 24)
 normalParagraph = Paragraph("hallo" + "<font name = " + nfn + ">" + "abc" + "</font>", normalStyle )
-emojiParagraph = Paragraph("<font name = " + nfn + ">" + "hallo" + "</font>" + "😎😛🙈🏈" + unicode1 + unicode2 + u"\xbc" +  u"\xbc\xbc" + u"\u2022" + "<font name = " + nfn + ">" + "hallo" + "</font>", emojiStyle )
+emojiParagraph = Paragraph("<font name = " + nfn + ">" + "hallo" + "</font>" + "😎😛🙈🏈" + unicode1 + unicode2 + unicode3 + u"\xbc" +  u"\xbc\xbc" + u"\u2022" + "<font name = " + nfn + ">" + "hallo" + "</font>", emojiStyle )
 emojiname = "PDF/Emoji.pdf"
 doc = SimpleDocTemplate(emojiname, pagesize=landscape(A4), rightMargin=5, leftMargin=5, topMargin=5, bottomMargin=5)
 storypdf=[]
