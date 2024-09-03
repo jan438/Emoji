@@ -10,7 +10,7 @@ print(smbytes)
 utf8code = smbytes.decode('utf-8')
 unicode =utf8code.encode('unicode_escape')
 unistr = unicode. decode("ascii")
-print("utf8", utf8code, "unicode", unicode, "ascii", unistr, "utf8", smunicode)
+print("string utf8", utf8code, "binair unicode", unicode, "string unicode", unistr, "binair utf8", smbytes)
 
 eind = unistr[-3:]
 x = int(eind, 16)
