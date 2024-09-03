@@ -5,7 +5,6 @@ utf8code = "😎"
 smbytes = utf8code.encode("utf-8")
 
 print('U+{:X}'.format(ord(utf8code)))
-print(smbytes)
 
 utf8code = smbytes.decode('utf-8')
 unicode =utf8code.encode('unicode_escape')
